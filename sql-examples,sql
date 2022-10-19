@@ -1,0 +1,14 @@
+insert into departments values('d099', 'Accounting');
+
+insert into departments (dept_name)
+values('Data Engineering');
+
+delete from departments where dept_no = 'd100'; #grab the item by primary key 
+
+update departments 
+	set dept_name = "Accounting and Finance"
+where dept_no = 'd099';
+
+update employees 
+	set birth_date = '1954-01-23', first_name = 'Lilly'
+where emp_no between 10019 and 10100 and last_name like 'j%';
